@@ -31,20 +31,35 @@
         }
 
         .articlebox {
-            width: auto;
-            height: 19em;
-            margin: 0px 3em 0px 3em;
-            padding: 7em;
+            width: 1183px;
+            height: auto;
+            margin: 0px auto 0px auto;
+            padding: 1em;
             border-radius: 5px;
             border: 0.5px solid #bdbdbd;
             background-color: white;
             color: black;
         }
 
+        .winner-winner-chicken-dinner {
+            width: 2em;
+            height:2em;
+            padding:0.7em 0.5em 0em 0.5em;
+            margin-top:1.2em;
+            border: 0.5px solid #303133;
+            border-radius: 3px;
+        }
+
+        .pole1 {
+            width: 1px;
+            height: 15px;
+            background-color: #303133;
+            margin: 0em 0em 0em 0em;
+        }
 
         /*본문 박스(대진표)*/
 
-        footer {
+        .footer1 {
             padding: 1em;
             background: #424242;
             font-family: "NanumMyeongjo", sans-serif;
@@ -112,10 +127,14 @@
     <header></header>
     <article>
         <div class="articlebox">
-
+            <center>
+                팔씨름 여자 대진표
+                <div class="winner-winner-chicken-dinner">X반</div>
+                <div class="pole1"></div>
+            </center>
         </div>
     </article>
-    <footer>
+    <footer class="footer1">
         <div class="footerbox">
             프론트엔드 개발자 : 이지수 <br><br>
             백엔드 개발자 : 임경민<br><br>
