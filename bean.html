@@ -1,0 +1,657 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>목일중학교 : 공기</title>
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding:400,700|Nanum+Gothic:400,700,800|Nanum+Myeongjo|Noto+Sans+KR:100,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bean.css" type="text/css">
+    <style>
+        body {
+            margin: 0px;
+            background-color: #e1e1e8;
+            font-family: "NanumMyeongjo", sans-serif;
+            font-weight: 100;
+            color: white;
+        }
+
+        /*body에 마진 제거, 백컬러 설정, 기본 폰트 설정*/
+
+        header {
+            padding: 0em;
+        }
+
+        /*헤더 백그라운드 및 패딩 설정*/
+
+        article {
+            margin: 0px;
+            padding: 8.26em 0em 7em 0em;
+            background-color: none;
+        }
+
+        .articlebox {
+            width: auto;
+            height: 19em;
+            margin: 0px 3em 0px 3em;
+            padding: 7em;
+            border-radius: 5px;
+            border: 0.5px solid #bdbdbd;
+            background-color: white;
+            color: black;
+        }
+
+        .pole1 {
+            width: 1px;
+            height: 15px;
+            background-color: #303133;
+            margin: 0em 0em 0em 0em;
+        }
+
+        .box1 {
+            width: 3em;
+            height: auto;
+            border: 0.5px solid #303133;
+            border-radius: 2px;
+            padding: 1em;
+            text-align: center;
+        }
+
+        .box2 {
+            height: 30px;
+            width: 19.46em;
+            border: 0.5px solid #303133;
+            border-bottom: none;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 0px;
+            border-right: none;
+            float: left;
+            margin-left: 9.9em;
+            text-align: right;
+        }
+
+        .box2-r {
+            height: 30px;
+            width: 19.46em;
+            border: 0.5px solid #303133;
+            border-bottom: none;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 3px;
+            border-left: none;
+            float: right;
+            margin-right: 9.9em;
+            text-align: left;
+        }
+
+        .box3 {
+            height: 30px;
+            width: 10em;
+            border: 0.5px solid #303133;
+            border-bottom: none;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 0px;
+            border-right: none;
+            float: left;
+            margin: 0em 0em 0px 18.77em;
+            text-align: right;
+        }
+
+        .box3-r {
+            height: 30px;
+            width: 10em;
+            border: 0.5px solid #303133;
+            border-bottom: none;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 3px;
+            border-left: none;
+            float: right;
+            margin: 0em 0em 0px 0em;
+            text-align: left;
+        }
+
+        .box4 {
+            height: 30px;
+            width: 10em;
+            border: 0.5px solid #303133;
+            border-bottom: none;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 0px;
+            float: left;
+            margin: 0em 0em 0px 0em;
+            border-right: none;
+            text-align: right;
+        }
+
+        .box4-r {
+            height: 30px;
+            width: 10em;
+            border: 0.5px solid #303133;
+            border-bottom: none;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 3px;
+            float: left;
+            margin: 0em 0em 0px 0em;
+            border-left: none;
+            text-align: left;
+        }
+
+        .box4-1 {
+            height: 30px;
+            width: 5em;
+            border: 0.5px solid #303133;
+            border-bottom: none;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 0px;
+            border-right: none;
+            float: left;
+            margin: 0em 0em 0px -5em;
+            text-align: right;
+        }
+
+        .box4-1-r {
+            height: 30px;
+            width: 5em;
+            border: 0.5px solid #303133;
+            border-bottom: none;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 3px;
+            border-left: none;
+            float: left;
+            margin: 0em 0em 0px 0em;
+            text-align: left;
+        }
+
+        .box4-2 {
+            height: 30px;
+            width: 5em;
+            border: 0.5px solid #303133;
+            border-bottom: none;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 0px;
+            border-right: none;
+            float: left;
+            margin: 0em 0em 0px 10em;
+            text-align: right;
+        }
+
+        .box4-2-r {
+            height: 30px;
+            width: 5em;
+            border: 0.5px solid #303133;
+            border-bottom: none;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 3px;
+            border-left: none;
+            float: left;
+            margin: 0em 0em 0px 0em;
+            text-align: left;
+        }
+
+        .box3-1 {
+            height: 30px;
+            width: 5em;
+            border: 0.5px solid #303133;
+            border-bottom: none;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 0px;
+            border-right: none;
+            float: left;
+            margin: 0em 0em 0px 8.7em;
+            text-align: right;
+        }
+
+        .box3-1-r {
+            height: 30px;
+            width: 5em;
+            border: 0.5px solid #303133;
+            border-bottom: none;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 3px;
+            border-left: none;
+            float: left;
+            margin: 0em 0em 0px 0em;
+            text-align: left;
+        }
+
+        .box3-2 {
+            height: 30px;
+            width: 5em;
+            border: 0.5px solid #303133;
+            border-bottom: none;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 3px;
+            border-left: none;
+            float: right;
+            margin: 0em -5em 0px 0em;
+            text-align: left;
+        }
+
+        .box3-2-r {
+            height: 30px;
+            width: 5em;
+            border: 0.5px solid #303133;
+            border-bottom: none;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 0px;
+            border-right: none;
+            float: right;
+            margin: 0em 0em 0px 0em;
+            text-align: right;
+        }
+
+
+
+        .box4-1-1-r {
+            height: 60px;
+            width: 2em;
+            border: 0.5px solid #303133;
+            border-bottom: none;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 3px;
+            border-left: none;
+            float: left;
+            margin: 1.9em 0em 0px -48.8em;
+            text-align: left;
+        }
+
+        .box4-1-2 {
+            height: 60px;
+            width: 2em;
+            border: 0.5px solid #303133;
+            border-bottom: none;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 0px;
+            border-right: none;
+            float: left;
+            margin: 1.9em 0em 0px -40.9em;
+            text-align: right;
+        }
+
+        .box4-1-2-r {
+            height: 60px;
+            width: 2em;
+            border: 0.5px solid #303133;
+            border-bottom: none;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 3px;
+            border-left: none;
+            float: left;
+            margin: 1.9em 0em 0px -38.9em;
+            text-align: left;
+        }
+
+        .box4-2-1 {
+            height: 60px;
+            width: 2em;
+            border: 0.5px solid #303133;
+            border-bottom: none;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 0px;
+            border-right: none;
+            float: left;
+            margin: 1.9em 0em 0px -30.8em;
+            text-align: right;
+        }
+
+        .box4-2-1-r {
+            height: 60px;
+            width: 2em;
+            border: 0.5px solid #303133;
+            border-bottom: none;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 3px;
+            border-left: none;
+            float: left;
+            margin: 1.9em 0em 0px -28.8em;
+            text-align: right;
+        }
+
+        .box4-2-2 {
+            height: 60px;
+            width: 2em;
+            border: 0.5px solid #303133;
+            border-bottom: none;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 0px;
+            border-right: none;
+            float: left;
+            margin: 1.9em 0em 0px -20.8em;
+            text-align: right;
+        }
+
+        .box4-2-2-r {
+            height: 60px;
+            width: 2em;
+            border: 0.5px solid #303133;
+            border-bottom: none;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 3px;
+            border-left: none;
+            float: left;
+            margin: 1.9em 0em 0px -18.8em;
+            text-align: left;
+        }
+
+        .box4-3-1 {
+            height: 60px;
+            width: 2em;
+            border: 0.5px solid #303133;
+            border-bottom: none;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 0px;
+            border-right: none;
+            float: left;
+            margin: 1.9em 0em 0px -12em;
+            text-align: right;
+        }
+
+        .box4-3-1-r {
+            height: 60px;
+            width: 2em;
+            border: 0.5px solid #303133;
+            border-bottom: none;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 3px;
+            border-left: none;
+            float: left;
+            margin: 1.9em 0em 0px -10em;
+            text-align: left;
+        }
+
+        .box4-3-2 {
+            height: 60px;
+            width: 2em;
+            border: 0.5px solid #303133;
+            border-bottom: none;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 0px;
+            border-right: none;
+            float: left;
+            margin: 1.9em -12em 0px -2em;
+            text-align: right;
+        }
+
+        .box4-3-2-r {
+            height: 60px;
+            width: 2em;
+            border: 0.5px solid #303133;
+            border-bottom: none;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 3px;
+            border-left: none;
+            float: left;
+            margin: 1.9em 0em 0px 0em;
+            text-align: left;
+        }
+
+        .box4-4-1 {
+            height: 60px;
+            width: 2em;
+            border: 0.5px solid #303133;
+            border-bottom: none;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 3px;
+            border-left: none;
+            float: right;
+            margin: 1.9em -2.1em 0px 0em;
+            text-align: left;
+        }
+
+        .box4-4-1-r {
+            height: 60px;
+            width: 2em;
+            border: 0.5px solid #303133;
+            border-bottom: none;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 0px;
+            border-right: none;
+            float: right;
+            margin: 1.9em 0em 0px 0em;
+            text-align: right;
+        }
+
+        .box4-4-2-r {
+            height: 60px;
+            width: 2em;
+            border: 0.5px solid #303133;
+            border-bottom: none;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 0px;
+            border-right: none;
+            float: right;
+            margin: 1.9em -12.1em 0px 0em;
+            text-align: center;
+        }
+
+        .box-1 {
+            width: 3em;
+            height: 2em;
+            border: solid 0.5px #303133;
+            margin: 9.5em 0em 0em -4.4em;
+            text-align: center;
+        }
+
+        .box-2 {
+            width: 3em;
+            height: 2em;
+            border: solid 0.5px #303133;
+            margin: -2.1em 0em 0em 1.4em;
+            text-align: center;
+        }
+
+        .box-3 {
+            width: 3em;
+            height: 2em;
+            border: solid 0.5px #303133;
+            margin: -2.05em 0em 0em 5.5em;
+            text-align: center;
+        }
+
+        .box-4 {
+            width: 3em;
+            height: 2em;
+            border: solid 0.5px #303133;
+            margin: -2.1em 0em 0em 11.5em;
+            text-align: center;
+        }
+
+        .box-5 {
+            width: 3em;
+            height: 2em;
+            border: solid 0.5px #303133;
+            margin: -2.05em 0em 0em 15.5em;
+            text-align: center;
+        }
+
+        .box-6 {
+            width: 3em;
+            height: 2em;
+            border: solid 0.5px #303133;
+            margin: -2.05em 0em 0em 21.5em;
+            text-align: center;
+        }
+
+        .box-7 {
+            width: 3em;
+            height: 2em;
+            border: solid 0.5px #303133;
+            margin: -2.05em 0em 0em 25.5em;
+            text-align: center;
+        }
+
+        .box-8 {
+            width: 3em;
+            height: 2em;
+            border: solid 0.5px #303133;
+            margin: -2.05em 0em 0em 30.5em;
+            text-align: center;
+        }
+
+        .box-9 {
+            width: 3em;
+            height: 2em;
+            border: solid 0.5px #303133;
+            margin: -2.05em 0em 0em 34.5em;
+            text-align: center;
+        }
+
+        .box-10 {
+            width: 3em;
+            height: 2em;
+            border: solid 0.5px #303133;
+            margin: -2.05em 0em 0em 40.5em;
+            text-align: center;
+        }
+
+        .box-11 {
+            width: 3em;
+            height: 2em;
+            border: solid 0.5px #303133;
+            margin: -2.05em 0em 0em 44.5em;
+            text-align: center;
+        }
+
+        .box-12 {
+            width: 3em;
+            height: 2em;
+            border: solid 0.5px #303133;
+            margin: -2.05em 0em 0em 50.5em;
+            text-align: center;
+        }
+
+        .box-13 {
+            width: 3em;
+            height: 2em;
+            border: solid 0.5px #303133;
+            margin: -2.05em 0em 0em 54.5em;
+            text-align: center;
+        }
+
+        .box-14 {
+            width: 3em;
+            height: 2em;
+            border: solid 0.5px #303133;
+            margin: -2.05em 0em 0em 60.5em;
+            text-align: center;
+        }
+
+        /*본문 박스(대진표)*/
+
+        footer {
+            padding: 1em;
+            background: #424242;
+            font-family: "NanumMyeongjo", sans-serif;
+            font-size: 0.7em;
+            text-align: center;
+        }
+        /*푸터 색상 설정, 폰트 설정*/
+
+        .footerbox {
+            background-color: none;
+            padding-top: 2em;
+        }
+        /*푸터 박스*/
+
+        address {
+            margin: 1em;
+            color: #6b6b6b;
+        }
+
+        /*연락처 정보*/
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0em 0.5em 0em 0.5em;
+            text-align: center;
+            font-family: "NanumMyeongjo", sans-serif;
+        }
+
+        .navbar {
+            position: fixed;
+            background-color: rgba(12, 12, 54, 0.88);
+            height: auto;
+            width: 100%;
+            margin: 0px;
+            font-size: 1em;
+        }
+
+        .nav-item {
+            padding: 1em 0.9em 1em 0.9em;
+        }
+
+            .nav-item:hover {
+                background-color: rgba(4, 4, 18, 0.88);
+            }
+
+        /*네비게이션 바 정보*/
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li class="nav-logo"><a href="index.html" target="_self"><img src="img/img/logo.png" width="51" height="15"</a></li>
+            <li class="nav-item"><a href="volley.html" target="_self">배구</a></li>
+            <li class="nav-item"><a href="concave.html" target="_self">오목</a></li>
+            <li class="nav-item"><a href="armm.html" target="_self">남자 팔씨름</a></li>
+            <li class="nav-item"><a href="armf.html" target="_self">여자 팔씨름</a></li>
+            <li class="nav-item"><a href="bean.html" target="_self">공기</a></li>
+        </ul>
+    </nav>
+    <header></header>
+    <article>
+        <div class="articlebox">
+            <center>
+                공기 대진표
+                <div class="box1">X반</div>
+                <div class="pole1"></div>
+            </center>
+            <div class="box2">13</div><div class="box2-r">경기</div>
+            <div class="box4">11</div><div class="box4-r">경기</div>
+            <div class="box3">12</div><div class="box3-r">경기</div>
+            <div class="box4-1">7</div><div class="box4-1-r">경기</div>
+            <div class="box4-2">9</div><div class="box4-2-r">경기</div>
+            <div class="box3-1">8</div><div class="box3-1-r">경기</div>
+            <div class="box3-2">경기</div><div class="box3-2-r">10</div>
+            <div class="box4-1-1"></div><div class="box4-1-1-r"></div>
+            <div class="box4-1-2">1</div><div class="box4-1-2-r">경기</div>
+            <div class="box4-2-1">3</div><div class="box4-2-1-r">경기</div>
+            <div class="box4-2-2">5</div><div class="box4-2-2-r">경기</div>
+            <div class="box4-3-1">2</div><div class="box4-3-1-r">경기</div>
+            <div class="box4-3-2">4</div><div class="box4-3-2-r">경기</div>
+            <div class="box4-4-1">경기</div><div class="box4-4-1-r">6</div>
+            <div class="box4-4-2"></div><div class="box4-4-2-r"></div>
+            <div class="box-1">1반</div>
+            <div class="box-2">9반</div>
+            <div class="box-3">10반</div>
+            <div class="box-4">8반</div>
+            <div class="box-5">11반</div>
+            <div class="box-6">6반</div>
+            <div class="box-7">3반</div>
+            <div class="box-8">14반</div>
+            <div class="box-9">2반</div>
+            <div class="box-10">12반</div>
+            <div class="box-11">5반</div>
+            <div class="box-12">13반</div>
+            <div class="box-13">7반</div>
+            <div class="box-14">4반</div>
+        </div>
+    </article>
+    <footer>
+        <div class="footerbox">
+            프론트엔드 개발자 : 이지수 <br><br>
+            백엔드 개발자 : 임경민<br><br>
+            <small><small>본 웹사이트는 15인치 디스플레이의 환경에서 개발되었으므로 열람시 최소 15인치 이상의 디스플레이를 사용하여야 원활히 작동할 수 있습니다.</small></small>
+            <address>
+                개발 : (+82)10-3322-4273<br>
+                방송 : (+82)추가 바람
+            </address>
+
+        </div>
+    </footer>
+</body>
+</html>
