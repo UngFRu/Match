@@ -1,1 +1,78 @@
-@charset "utf-8";
+﻿@charset "utf-8";
+
+body {
+    margin: 0px;
+    background-color: #e1e1e8;
+    font-family: "NotoSansKR", sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+/*body에 마진 제거, 백컬러 설정, 기본 폰트 설정*/
+
+footer {
+    padding: 1em;
+    background: #424242;
+    font-family: "NanumMyeongjo", sans-serif;
+    font-size: 0.7em;
+    text-align: center;
+}
+/*푸터 색상 설정, 폰트 설정*/
+
+.footerbox {
+    background-color: none;
+    padding-top: 2em;
+}
+/*푸터 박스*/
+
+address {
+    margin: 1em;
+    color: #6b6b6b;
+}
+
+/*연락처 정보*/
+
+header {
+    padding: 6em 0em 6em 0em;
+    background-image: url(img/background/대진표.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 900;
+    font-size: 2.5em;
+}
+
+/*헤더 백그라운드 및 패딩 설정*/
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*텍스트데코 삭제, 색상 설정*/
+
+nav ul li {
+    display: inline-block;
+    margin: 0em 0.5em 0em 0.5em;
+    text-align: center;
+    font-family: "NanumMyeongjo", sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    background-color: rgba(12, 12, 54, 0.88);
+    height: auto;
+    width: 100%;
+    margin: 0px;
+    font-size: 1em;
+}
+
+.nav-item {
+    padding: 1em 0.9em 1em 0.9em;
+}
+
+    .nav-item:hover {
+        background-color: rgba(4, 4, 18, 0.88);
+    }
+
+/*네비게이션 바 정보*/
